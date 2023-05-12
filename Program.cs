@@ -63,19 +63,19 @@
         switch (direction)
         {
             case 'w':
-                newRow -= 2; // Move 2 rows up
+                newRow -= 2; 
                 break;
 
             case 's':
-                newRow += 2; // Move 2 rows down
+                newRow += 2;
                 break;
 
             case 'a':
-                newCol -= 2; // Move 2 columns to the left
+                newCol -= 2;
                 break;
 
             case 'd':
-                newCol += 2; // Move 2 columns to the right
+                newCol += 2; 
                 break;
 
             default:
@@ -123,8 +123,8 @@
         string input = Console.ReadLine();
         string[] coordinates = input.Split(',');
 
-        int row = Convert.ToInt32(coordinates[0]) * 2; // Multiply by 2 to convert to board coordinates
-        int col = Convert.ToInt32(coordinates[1]) * 2; // Multiply by 2 to convert to board coordinates
+        int row = Convert.ToInt32(coordinates[0]) * 2; 
+        int col = Convert.ToInt32(coordinates[1]) * 2; 
 
         if (IsWallPlacementValid(row, col))
         {
